@@ -1,4 +1,4 @@
-package de.mlrdev.liquibasedemo;
+package de.mlrdev.liquibasedemo.dbversioning;
 
 import liquibase.change.custom.CustomSqlChange;
 import liquibase.database.Database;

@@ -8,7 +8,7 @@
         <comment>
             Simple show-case where all entities with odd id's got their birthday set to null
         </comment>
-        <customChange class="de.mlrdev.liquibasedemo.AlterPerson"/>
+        <customChange class="de.mlrdev.liquibasedemo.dbversioning.AlterPerson"/>
     </changeSet>
 
 </databaseChangeLog>
