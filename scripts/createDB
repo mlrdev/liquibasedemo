@@ -1,0 +1,6 @@
+sudo -u postgres createuser liquibase
+sudo -u postgres createdb --owner=liquibase liquibase
+sudo -u postgres psql -c "ALTER USER liquibase WITH PASSWORD 'liquibase'"
+
+# Inject dump to the db
+psql -U liquibase -h localhost < liquibase_data.sql

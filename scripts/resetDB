@@ -1,0 +1,8 @@
+# Kill (old) connections
+sudo -u postgres psql -c "select pg_terminate_backend(procpid) from pg_stat_activity where datname=liquibase"
+
+sudo -u postgres dropdb liquibase
+sudo -u postgres createdb --owner=liquibase liquibase
+
+# Inject dump to the db
+psql -U liquibase -h localhost < liquibase_data.sql 
