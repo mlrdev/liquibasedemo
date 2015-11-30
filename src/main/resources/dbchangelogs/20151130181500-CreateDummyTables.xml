@@ -1,0 +1,24 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+  http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="mlrdev">
+        <comment>
+            Simple show-case to create some tables
+        </comment>
+        <customChange class="de.mlrdev.liquibasedemo.dbversioning.CreateTables"/>
+    </changeSet>
+
+    <changeSet id="2" author="mlrdev">
+        <comment>
+            Simple show-case of mixed mode... xml is possible, too
+        </comment>
+        <insert tableName="foo">
+            <column name="id" value="0"></column>
+            <column name="name" value="foobar!"></column>
+            <column name="description" value="A description..."></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

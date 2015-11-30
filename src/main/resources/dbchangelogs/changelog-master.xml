@@ -6,5 +6,6 @@
 
     <!-- New changescript xmls are to be inluded here -->
     <include file="dbchangelogs/20151129174900-SetNullDates.xml"/>
+    <include file="dbchangelogs/20151130181500-CreateDummyTables.xml"/>
 
 </databaseChangeLog>
